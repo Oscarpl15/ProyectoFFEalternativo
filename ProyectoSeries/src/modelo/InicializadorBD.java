@@ -3,6 +3,9 @@ package modelo;
 
 import java.sql.Connection;
 import java.sql.Statement;
+
+import javax.swing.JOptionPane;
+
 import java.sql.SQLException;
 
 public class InicializadorBD {
@@ -27,10 +30,10 @@ public class InicializadorBD {
              Statement stmt = conn.createStatement()) {
 
             stmt.execute(creaTabla);
-            System.out.println("Tabla y secuencia creadas o ya existían.");
+            JOptionPane.showMessageDialog(null, "✅ Tabla y secuencia creadas o ya existían.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
 
         } catch (SQLException e) {
-            System.err.println("Error al inicializar la base de datos: " + e.getMessage());
+        	JOptionPane.showMessageDialog(null, "❌ Error al inicializar la base de datos: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             e.printStackTrace();
         }
     }

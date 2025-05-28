@@ -116,6 +116,15 @@ public class FormularioRegistro extends JDialog {
         return (String) cboPlataforma.getSelectedItem();
     }
     
+
+    public void setDatos(String titulo, String genero, String temporadas, String anio, String plataforma) {
+        txtTitulo.setText(titulo);
+        txtGenero.setText(genero);
+        txtTemporadas.setText(temporadas);
+        txtAnio.setText(anio);
+        cboPlataforma.setSelectedItem(plataforma);
+    }
+    
     public boolean isGuardado() {
         return guardado;
     }

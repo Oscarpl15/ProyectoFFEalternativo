@@ -125,4 +125,43 @@ public class SerieDAO {
 
         return lista;
     }
+    
+
+    // Método para eliminar una serie por ID
+    public void eliminar(int id) {
+    	String sql = "DELETE FROM series WHERE id = ?";
+
+    	try (Connection conn = ConexionBD.getConexion();
+    			PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+    		pstmt.setInt(1, id);
+    		pstmt.executeUpdate();
+
+    	} catch (SQLException e) {
+    		JOptionPane.showMessageDialog(null, "Error al eliminar la serie: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+    		e.printStackTrace();
+    	}
+    }
+
+    // Método para actualizar una serie
+	public void editar(Serie serie) {
+		String sql = "UPDATE series SET titulo = ?, genero = ?, temporadas = ?, anio_lanzamiento = ?, plataforma = ? WHERE id = ?";
+
+		try (Connection conn = ConexionBD.getConexion();
+			PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+			pstmt.setString(1, serie.getTitulo());
+			pstmt.setString(2, serie.getGenero());
+			pstmt.setInt(3, serie.getTemporadas());
+			pstmt.setInt(4, serie.getAnioLanzamiento());
+			pstmt.setString(5, serie.getPlataforma());
+			pstmt.setInt(6, serie.getId());
+
+			pstmt.executeUpdate();
+
+		} catch (SQLException e) {
+			JOptionPane.showMessageDialog(null, "Error al editar la serie: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+			e.printStackTrace();
+		}
+	}
 }

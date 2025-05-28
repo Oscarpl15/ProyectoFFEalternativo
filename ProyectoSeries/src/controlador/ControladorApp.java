@@ -25,20 +25,20 @@ public class ControladorApp {
         });
         
       //Acción de modificar series.
-        vista.getBtnModificar().addActionListener(new ActionListener() {
+       /* vista.getBtnModificar().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 mostrarVentanaConsulta(vista);
             }
-        });
+        });*/
         
       //Acción de eliminar series.
-        vista.getBtnEliminar().addActionListener(new ActionListener() {
+       /* vista.getBtnEliminar().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 mostrarVentanaConsulta(vista);
             }
-        });
+        });*/
     }
 
     //Metodo para abrir el formulario de registro.

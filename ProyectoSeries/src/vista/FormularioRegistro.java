@@ -1,4 +1,3 @@
-// vista/FormularioRegistro.java
 package vista;
 
 import javax.swing.*;
@@ -14,6 +13,7 @@ public class FormularioRegistro extends JDialog {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JTextField txtTitulo, txtGenero, txtTemporadas, txtAnio;
+	private JComboBox<String> cboPlataforma;
     private JButton btnGuardar;
     private boolean guardado = false;
     
@@ -35,6 +35,13 @@ public class FormularioRegistro extends JDialog {
         txtGenero = new JTextField();
         txtTemporadas = new JTextField();
         txtAnio = new JTextField();
+        
+        // ComboBox para plataforma
+        String[] plataformas = {"Movistar", "Netflix", "HBO", "Amazon", "Disney"};
+        cboPlataforma = new JComboBox<>(plataformas);
+        cboPlataforma.setBackground(colorFondoCampo);
+        cboPlataforma.setForeground(colorTexto);
+        cboPlataforma.setFont(fuente);
 
         // Estilizado
         estilizarCampo(txtTitulo, colorFondoCampo, colorTexto, fuente);
@@ -51,6 +58,8 @@ public class FormularioRegistro extends JDialog {
         add(this.txtTemporadas);
         addEtiqueta("Año de lanzamiento:");
         add(txtAnio);
+        addEtiqueta("Plataforma:");
+        add(cboPlataforma);
 
         // Botón Guardar
         btnGuardar = new JButton("Guardar");
@@ -73,7 +82,7 @@ public class FormularioRegistro extends JDialog {
         campo.setBackground(fondo);
         campo.setForeground(texto);
         campo.setFont(fuente);
-        campo.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));//?
+       // campo.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));//?
     }
 
     public void addActionListener(ActionListener listener) {
@@ -102,7 +111,11 @@ public class FormularioRegistro extends JDialog {
         	return -1;
         }
     }
-
+    
+    public String getPlataforma() {
+        return (String) cboPlataforma.getSelectedItem();
+    }
+    
     public boolean isGuardado() {
         return guardado;
     }

@@ -60,7 +60,8 @@ public class ControladorApp {
                         dialog.getTitulo(),
                         dialog.getGenero(),
                         dialog.getTemporadas(),
-                        dialog.getAnioLanzamiento()
+                        dialog.getAnioLanzamiento(),
+                        dialog.getPlataforma()
                     );
 
                     dao.guardar(serie);

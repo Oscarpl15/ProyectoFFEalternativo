@@ -22,7 +22,7 @@ public class VentanaConsulta extends JDialog {
 
     public VentanaConsulta(JFrame padre) {
         super(padre, "Consulta de Series", true);
-        setSize(900, 500);
+        setSize(1000, 500);
         setLocationRelativeTo(padre);
         setLayout(new BorderLayout());
         getContentPane().setBackground(new Color(30, 30, 30));

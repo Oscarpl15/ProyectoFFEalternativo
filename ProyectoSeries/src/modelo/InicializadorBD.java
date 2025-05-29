@@ -1,4 +1,4 @@
-// modelo/InicializadorBD.java
+
 package modelo;
 
 import java.sql.Connection;

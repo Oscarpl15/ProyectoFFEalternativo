@@ -10,6 +10,8 @@ import javax.swing.JOptionPane;
 public class SerieDAO {
 
     // Método para obtener el siguiente ID usando la secuencia
+	// De esta forma hay una asignación automática de id a la hora de agregar series.
+	// No es muy funcional, porque requiere un recorrido completo de tabla y valores, pero ante esta situación de proyecto es algo menor.
     public int getSiguienteId() {
         String sql = "SELECT serie_seq.NEXTVAL FROM dual";
         int id = -1;

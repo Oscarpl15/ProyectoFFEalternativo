@@ -24,21 +24,6 @@ public class ControladorApp {
             }
         });
         
-      //Acción de modificar series.
-       /* vista.getBtnModificar().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                mostrarVentanaConsulta(vista);
-            }
-        });*/
-        
-      //Acción de eliminar series.
-       /* vista.getBtnEliminar().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                mostrarVentanaConsulta(vista);
-            }
-        });*/
     }
 
     //Metodo para abrir el formulario de registro.
@@ -49,6 +34,7 @@ public class ControladorApp {
         dialog.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ev) {
+            	//Aqui comprobamos las condiciones que deseamos para que la entrada sea valida.
                 if (!dialog.getTitulo().isEmpty()
                     && dialog.getTemporadas() > 0
                     && dialog.getAnioLanzamiento() >= 1950

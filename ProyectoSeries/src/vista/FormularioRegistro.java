@@ -6,7 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-public class FormularioRegistro extends JDialog {
+//Damos diseño al formulario de registro de series, que extiende de la clase JDialog.
+public final class FormularioRegistro extends JDialog {
 
     /**
 	 * 
@@ -82,7 +83,6 @@ public class FormularioRegistro extends JDialog {
         campo.setBackground(fondo);
         campo.setForeground(texto);
         campo.setFont(fuente);
-       // campo.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));//?
     }
 
     public void addActionListener(ActionListener listener) {

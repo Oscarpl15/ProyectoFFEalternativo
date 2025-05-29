@@ -1,0 +1,220 @@
+src/controlador/ControladorApp.java:8:	CommentRequired:	CommentRequired: Class comments are required
+src/controlador/ControladorApp.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/controlador/ControladorApp.java:10:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'vista' is not assigned and could be declared final
+src/controlador/ControladorApp.java:14:	ShortVariable:	ShortVariable: Avoid variables with short names like e
+src/controlador/ControladorApp.java:22:	ShortVariable:	ShortVariable: Avoid variables with short names like e
+src/controlador/ControladorApp.java:30:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'vista' is not assigned and could be declared final
+src/controlador/ControladorApp.java:31:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dialog' could be declared final
+src/controlador/ControladorApp.java:32:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dao' could be declared final
+src/controlador/ControladorApp.java:36:	ShortVariable:	ShortVariable: Avoid variables with short names like ev
+src/controlador/ControladorApp.java:42:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'id' could be declared final
+src/controlador/ControladorApp.java:42:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/controlador/ControladorApp.java:43:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'serie' could be declared final
+src/controlador/ControladorApp.java:71:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'vista' is not assigned and could be declared final
+src/controlador/ControladorApp.java:72:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'ventanaConsulta' could be declared final
+src/modelo/ConexionBD.java:9:	CommentRequired:	CommentRequired: Class comments are required
+src/modelo/ConexionBD.java:9:	UseUtilityClass:	UseUtilityClass: This utility class has a non-private constructor
+src/modelo/ConexionBD.java:10:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/modelo/ConexionBD.java:11:	CommentRequired:	CommentRequired: Field comments are required
+src/modelo/ConexionBD.java:11:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'conexion'
+src/modelo/ConexionBD.java:15:	NonThreadSafeSingleton:	NonThreadSafeSingleton: Singleton is not thread safe
+src/modelo/ConexionBD.java:24:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/modelo/InicializadorBD.java:11:	CommentRequired:	CommentRequired: Class comments are required
+src/modelo/InicializadorBD.java:11:	UseUtilityClass:	UseUtilityClass: This utility class has a non-private constructor
+src/modelo/InicializadorBD.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/modelo/InicializadorBD.java:19:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'creaTabla' could be declared final
+src/modelo/InicializadorBD.java:37:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/modelo/Serie.java:4:	CommentRequired:	CommentRequired: Class comments are required
+src/modelo/Serie.java:4:	DataClass:	DataClass: The class 'Serie' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=6, WMC=7)
+src/modelo/Serie.java:5:	CommentRequired:	CommentRequired: Field comments are required
+src/modelo/Serie.java:5:	ImmutableField:	ImmutableField: Field 'id' may be declared final
+src/modelo/Serie.java:5:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/modelo/Serie.java:6:	CommentRequired:	CommentRequired: Field comments are required
+src/modelo/Serie.java:6:	ImmutableField:	ImmutableField: Field 'titulo' may be declared final
+src/modelo/Serie.java:7:	CommentRequired:	CommentRequired: Field comments are required
+src/modelo/Serie.java:7:	ImmutableField:	ImmutableField: Field 'genero' may be declared final
+src/modelo/Serie.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/modelo/Serie.java:8:	ImmutableField:	ImmutableField: Field 'temporadas' may be declared final
+src/modelo/Serie.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/modelo/Serie.java:9:	ImmutableField:	ImmutableField: Field 'anioLanzamiento' may be declared final
+src/modelo/Serie.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/modelo/Serie.java:10:	ImmutableField:	ImmutableField: Field 'plataforma' may be declared final
+src/modelo/Serie.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/modelo/Serie.java:12:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'anioLanzamiento' is not assigned and could be declared final
+src/modelo/Serie.java:12:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'genero' is not assigned and could be declared final
+src/modelo/Serie.java:12:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/modelo/Serie.java:12:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'plataforma' is not assigned and could be declared final
+src/modelo/Serie.java:12:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'temporadas' is not assigned and could be declared final
+src/modelo/Serie.java:12:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'titulo' is not assigned and could be declared final
+src/modelo/Serie.java:12:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/modelo/SerieDAO.java:10:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/modelo/SerieDAO.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/modelo/SerieDAO.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/modelo/SerieDAO.java:14:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sql' could be declared final
+src/modelo/SerieDAO.java:15:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/modelo/SerieDAO.java:19:	ShortVariable:	ShortVariable: Avoid variables with short names like rs
+src/modelo/SerieDAO.java:26:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "Error" appears 6 times in this file; the first occurrence is on line 26
+src/modelo/SerieDAO.java:27:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/modelo/SerieDAO.java:34:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/modelo/SerieDAO.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'serie' is not assigned and could be declared final
+src/modelo/SerieDAO.java:35:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sql' could be declared final
+src/modelo/SerieDAO.java:53:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/modelo/SerieDAO.java:58:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/modelo/SerieDAO.java:59:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sql' could be declared final
+src/modelo/SerieDAO.java:60:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'lista' could be declared final
+src/modelo/SerieDAO.java:64:	ShortVariable:	ShortVariable: Avoid variables with short names like rs
+src/modelo/SerieDAO.java:67:	AvoidInstantiatingObjectsInLoops:	AvoidInstantiatingObjectsInLoops: Avoid instantiating new objects inside loops
+src/modelo/SerieDAO.java:67:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'serie' could be declared final
+src/modelo/SerieDAO.java:80:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/modelo/SerieDAO.java:88:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/modelo/SerieDAO.java:88:	CyclomaticComplexity:	CyclomaticComplexity: The method 'buscar(String, String, Integer, String)' has a cyclomatic complexity of 11.
+src/modelo/SerieDAO.java:88:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'anio' is not assigned and could be declared final
+src/modelo/SerieDAO.java:88:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'genero' is not assigned and could be declared final
+src/modelo/SerieDAO.java:88:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'plataforma' is not assigned and could be declared final
+src/modelo/SerieDAO.java:88:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'titulo' is not assigned and could be declared final
+src/modelo/SerieDAO.java:88:	NPathComplexity:	NPathComplexity: The method 'buscar(String, String, Integer, String)' has an NPath complexity of 324, current threshold is 200
+src/modelo/SerieDAO.java:89:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'lista' could be declared final
+src/modelo/SerieDAO.java:90:	InsufficientStringBufferDeclaration:	InsufficientStringBufferDeclaration: StringBuilder has been initialized with size 105, but has at least 217 characters appended.
+src/modelo/SerieDAO.java:90:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sql' could be declared final
+src/modelo/SerieDAO.java:93:	AppendCharacterWithChar:	AppendCharacterWithChar: Avoid appending characters as strings in StringBuffer.append.
+src/modelo/SerieDAO.java:93:	ConsecutiveLiteralAppends:	ConsecutiveLiteralAppends: StringBuffer (or StringBuilder).append is called 2 consecutive times with literals. Use a single append with a single combined String.
+src/modelo/SerieDAO.java:96:	AppendCharacterWithChar:	AppendCharacterWithChar: Avoid appending characters as strings in StringBuffer.append.
+src/modelo/SerieDAO.java:96:	ConsecutiveLiteralAppends:	ConsecutiveLiteralAppends: StringBuffer (or StringBuilder).append is called 2 consecutive times with literals. Use a single append with a single combined String.
+src/modelo/SerieDAO.java:107:	ShortVariable:	ShortVariable: Avoid variables with short names like rs
+src/modelo/SerieDAO.java:110:	AvoidInstantiatingObjectsInLoops:	AvoidInstantiatingObjectsInLoops: Avoid instantiating new objects inside loops
+src/modelo/SerieDAO.java:110:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'serie' could be declared final
+src/modelo/SerieDAO.java:123:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/modelo/SerieDAO.java:131:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/modelo/SerieDAO.java:131:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/modelo/SerieDAO.java:131:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/modelo/SerieDAO.java:132:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sql' could be declared final
+src/modelo/SerieDAO.java:142:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/modelo/SerieDAO.java:147:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/modelo/SerieDAO.java:147:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'serie' is not assigned and could be declared final
+src/modelo/SerieDAO.java:148:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sql' could be declared final
+src/modelo/SerieDAO.java:164:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/principal/App.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/principal/App.java:10:	ShortClassName:	ShortClassName: Avoid short class names like App
+src/principal/App.java:10:	UseUtilityClass:	UseUtilityClass: This utility class has a non-private constructor
+src/principal/App.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/principal/App.java:14:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/principal/App.java:15:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/principal/App.java:20:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'vista' could be declared final
+src/principal/App.java:23:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'controlador'.
+src/vista/FormularioRegistro.java:9:	CommentRequired:	CommentRequired: Class comments are required
+src/vista/FormularioRegistro.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/FormularioRegistro.java:15:	ImmutableField:	ImmutableField: Field 'txtAnio' may be declared final
+src/vista/FormularioRegistro.java:15:	ImmutableField:	ImmutableField: Field 'txtGenero' may be declared final
+src/vista/FormularioRegistro.java:15:	ImmutableField:	ImmutableField: Field 'txtTemporadas' may be declared final
+src/vista/FormularioRegistro.java:15:	ImmutableField:	ImmutableField: Field 'txtTitulo' may be declared final
+src/vista/FormularioRegistro.java:15:	OneDeclarationPerLine:	OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
+src/vista/FormularioRegistro.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/FormularioRegistro.java:16:	ImmutableField:	ImmutableField: Field 'cboPlataforma' may be declared final
+src/vista/FormularioRegistro.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/FormularioRegistro.java:17:	ImmutableField:	ImmutableField: Field 'btnGuardar' may be declared final
+src/vista/FormularioRegistro.java:18:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/FormularioRegistro.java:18:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'guardado'
+src/vista/FormularioRegistro.java:21:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/FormularioRegistro.java:21:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'padre' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:29:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'fuente' could be declared final
+src/vista/FormularioRegistro.java:30:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'colorTexto' could be declared final
+src/vista/FormularioRegistro.java:31:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'colorFondoCampo' could be declared final
+src/vista/FormularioRegistro.java:40:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'plataformas' could be declared final
+src/vista/FormularioRegistro.java:74:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'texto' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:75:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'etiqueta' could be declared final
+src/vista/FormularioRegistro.java:81:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'campo' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:81:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fondo' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:81:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fuente' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:81:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'texto' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:88:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/FormularioRegistro.java:88:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'listener' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:92:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/FormularioRegistro.java:96:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/FormularioRegistro.java:100:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/FormularioRegistro.java:102:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/vista/FormularioRegistro.java:108:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/FormularioRegistro.java:109:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/vista/FormularioRegistro.java:115:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/FormularioRegistro.java:116:	LawOfDemeter:	LawOfDemeter: Call to `getSelectedItem` on foreign value `cboPlataforma` (degree 1)
+src/vista/FormularioRegistro.java:120:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/FormularioRegistro.java:120:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'anio' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:120:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'genero' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:120:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'plataforma' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:120:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'temporadas' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:120:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'titulo' is not assigned and could be declared final
+src/vista/FormularioRegistro.java:120:	UseObjectForClearerAPI:	UseObjectForClearerAPI: Rather than using a lot of String arguments, consider using a container object for those values.
+src/vista/FormularioRegistro.java:132:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/VentanaConsulta.java:14:	CommentRequired:	CommentRequired: Class comments are required
+src/vista/VentanaConsulta.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/VentanaConsulta.java:17:	ImmutableField:	ImmutableField: Field 'txtAnio' may be declared final
+src/vista/VentanaConsulta.java:17:	ImmutableField:	ImmutableField: Field 'txtGenero' may be declared final
+src/vista/VentanaConsulta.java:17:	ImmutableField:	ImmutableField: Field 'txtTitulo' may be declared final
+src/vista/VentanaConsulta.java:17:	OneDeclarationPerLine:	OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
+src/vista/VentanaConsulta.java:18:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/VentanaConsulta.java:18:	ImmutableField:	ImmutableField: Field 'cboPlataformaFiltro' may be declared final
+src/vista/VentanaConsulta.java:18:	LongVariable:	LongVariable: Avoid excessively long variable names like cboPlataformaFiltro
+src/vista/VentanaConsulta.java:19:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/VentanaConsulta.java:19:	ImmutableField:	ImmutableField: Field 'tabla' may be declared final
+src/vista/VentanaConsulta.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/VentanaConsulta.java:20:	ImmutableField:	ImmutableField: Field 'modeloTabla' may be declared final
+src/vista/VentanaConsulta.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/VentanaConsulta.java:21:	ImmutableField:	ImmutableField: Field 'dao' may be declared final
+src/vista/VentanaConsulta.java:21:	NonSerializableClass:	NonSerializableClass: The field 'dao' of serializable class 'vista.VentanaConsulta' is of non-serializable type 'modelo.SerieDAO'.
+src/vista/VentanaConsulta.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/VentanaConsulta.java:22:	ImmutableField:	ImmutableField: Field 'padre' may be declared final
+src/vista/VentanaConsulta.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/VentanaConsulta.java:23:	ImmutableField:	ImmutableField: Field 'btnEditar' may be declared final
+src/vista/VentanaConsulta.java:23:	SingularField:	SingularField: Perhaps 'btnEditar' could be replaced by a local variable.
+src/vista/VentanaConsulta.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/VentanaConsulta.java:24:	ImmutableField:	ImmutableField: Field 'btnEliminar' may be declared final
+src/vista/VentanaConsulta.java:24:	SingularField:	SingularField: Perhaps 'btnEliminar' could be replaced by a local variable.
+src/vista/VentanaConsulta.java:26:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/VentanaConsulta.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'padre' is not assigned and could be declared final
+src/vista/VentanaConsulta.java:26:	NcssCount:	NcssCount: The constructor 'VentanaConsulta(JFrame)' has a NCSS line count of 79.
+src/vista/VentanaConsulta.java:37:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'panelFiltros' could be declared final
+src/vista/VentanaConsulta.java:67:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "Segoe UI" appears 6 times in this file; the first occurrence is on line 67
+src/vista/VentanaConsulta.java:73:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'btnBuscar' could be declared final
+src/vista/VentanaConsulta.java:97:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'scrollPane' could be declared final
+src/vista/VentanaConsulta.java:101:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'panelAcciones' could be declared final
+src/vista/VentanaConsulta.java:121:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'btnCerrar' could be declared final
+src/vista/VentanaConsulta.java:137:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'campo' is not assigned and could be declared final
+src/vista/VentanaConsulta.java:146:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'titulo' could be declared final
+src/vista/VentanaConsulta.java:147:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'genero' could be declared final
+src/vista/VentanaConsulta.java:148:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'anio' could be declared final
+src/vista/VentanaConsulta.java:149:	LawOfDemeter:	LawOfDemeter: Call to `getSelectedItem` on foreign value `cboPlataformaFiltro` (degree 1)
+src/vista/VentanaConsulta.java:151:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using literals in if statements
+src/vista/VentanaConsulta.java:152:	NullAssignment:	NullAssignment: Assigning an Object to null is a code smell.  Consider refactoring.
+src/vista/VentanaConsulta.java:155:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'lista' could be declared final
+src/vista/VentanaConsulta.java:157:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'serie' could be declared final
+src/vista/VentanaConsulta.java:158:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'fila' could be declared final
+src/vista/VentanaConsulta.java:170:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'texto' is not assigned and could be declared final
+src/vista/VentanaConsulta.java:172:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/vista/VentanaConsulta.java:178:	ShortVariable:	ShortVariable: Avoid variables with short names like e
+src/vista/VentanaConsulta.java:178:	UnusedFormalParameter:	UnusedFormalParameter: Avoid unused method parameters such as 'e'.
+src/vista/VentanaConsulta.java:189:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'fila' could be declared final
+src/vista/VentanaConsulta.java:192:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/vista/VentanaConsulta.java:196:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'id' could be declared final
+src/vista/VentanaConsulta.java:196:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/vista/VentanaConsulta.java:197:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'titulo' could be declared final
+src/vista/VentanaConsulta.java:198:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'genero' could be declared final
+src/vista/VentanaConsulta.java:199:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'temporadas' could be declared final
+src/vista/VentanaConsulta.java:200:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'anio' could be declared final
+src/vista/VentanaConsulta.java:201:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'plataforma' could be declared final
+src/vista/VentanaConsulta.java:204:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'tempObj' could be declared final
+src/vista/VentanaConsulta.java:205:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'anioObj' could be declared final
+src/vista/VentanaConsulta.java:211:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/vista/VentanaConsulta.java:217:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dialog' could be declared final
+src/vista/VentanaConsulta.java:227:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'serieEditada' could be declared final
+src/vista/VentanaConsulta.java:250:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'fila' could be declared final
+src/vista/VentanaConsulta.java:256:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'confirmado' could be declared final
+src/vista/VentanaConsulta.java:258:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'id' could be declared final
+src/vista/VentanaConsulta.java:258:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/vista/VistaPrincipal.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/vista/VistaPrincipal.java:13:	CommentRequired:	CommentRequired: Field comments are required
+src/vista/VistaPrincipal.java:13:	ImmutableField:	ImmutableField: Field 'btnConsultar' may be declared final
+src/vista/VistaPrincipal.java:13:	ImmutableField:	ImmutableField: Field 'btnRegistrar' may be declared final
+src/vista/VistaPrincipal.java:13:	OneDeclarationPerLine:	OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
+src/vista/VistaPrincipal.java:15:	CallSuperInConstructor:	CallSuperInConstructor: It is a good practice to call super() in a constructor
+src/vista/VistaPrincipal.java:15:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/vista/VistaPrincipal.java:18:	UnnecessaryFullyQualifiedName:	UnnecessaryFullyQualifiedName: Unnecessary qualifier 'JFrame': 'WindowConstants::EXIT_ON_CLOSE' is already in scope because it is inherited by an enclosing type
+src/vista/VistaPrincipal.java:36:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'boton' is not assigned and could be declared final

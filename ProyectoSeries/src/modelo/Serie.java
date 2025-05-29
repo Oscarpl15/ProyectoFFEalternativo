@@ -1,4 +1,3 @@
-// modelo/Serie.java
 package modelo;
 
 public class Serie {

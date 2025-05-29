@@ -1,10 +1,11 @@
-// VistaPrincipal.java
+
 package vista;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class VistaPrincipal extends JFrame {
+//Vista principal, de aqui se derivara a una de las otras dos interfaces, no tiene mas función que esa.
+public final class VistaPrincipal extends JFrame {
 
     /**
 	 * 

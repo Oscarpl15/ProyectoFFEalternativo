@@ -1,4 +1,3 @@
-// vista/VentanaConsulta.java
 
 package vista;
 
@@ -11,10 +10,11 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.List;
 
-public class VentanaConsulta extends JDialog {
+//Damos diseño a nuestra ventana consulta, donde podremos modificar y eliminar las series tambien.
+public final class VentanaConsulta extends JDialog {
 
     private static final long serialVersionUID = 1L;
-	private JTextField txtTitulo, txtGenero, txtAnio;
+	final private JTextField txtTitulo, txtGenero, txtAnio;
 	private JComboBox<String> cboPlataformaFiltro;
     private JTable tabla;
     private DefaultTableModel modeloTabla;
@@ -140,6 +140,7 @@ public class VentanaConsulta extends JDialog {
         campo.setFont(new Font("Segoe UI", Font.PLAIN, 14));
     }
 
+    //Método que sirve para mostrar en una tabla las series que nos devuelve serieDAO en base a condiciones de busqueda.
     private void cargarDatos() {
         modeloTabla.setRowCount(0); // Limpiar tabla
 
@@ -186,23 +187,23 @@ public class VentanaConsulta extends JDialog {
 
     // Método para editar la serie seleccionada
     private void editarSerieSeleccionada() {
-        int fila = getFilaSeleccionada();
+        final int fila = getFilaSeleccionada();
         if (fila == -1) {
             JOptionPane.showMessageDialog(this, "Por favor, selecciona una serie.", "Advertencia", JOptionPane.WARNING_MESSAGE);
             return;
         }
 
         // Obtener datos de la fila
-        int id = (int) modeloTabla.getValueAt(fila, 0);
-        String titulo = (String) modeloTabla.getValueAt(fila, 1);
-        String genero = (String) modeloTabla.getValueAt(fila, 2);
-        int temporadas ;
-        int anio ;
-        String plataforma = (String) modeloTabla.getValueAt(fila, 5);
+        final int id = (int) modeloTabla.getValueAt(fila, 0);
+        final String titulo = (String) modeloTabla.getValueAt(fila, 1);
+        final String genero = (String) modeloTabla.getValueAt(fila, 2);
+        final int temporadas ;
+        final int anio ;
+        final String plataforma = (String) modeloTabla.getValueAt(fila, 5);
         
         try {
-            Object tempObj = modeloTabla.getValueAt(fila, 3);
-            Object anioObj = modeloTabla.getValueAt(fila, 4);
+            final Object tempObj = modeloTabla.getValueAt(fila, 3);
+            final Object anioObj = modeloTabla.getValueAt(fila, 4);
 
             // Convertir a enteros de forma segura
             temporadas = Integer.parseInt(tempObj.toString());
@@ -214,17 +215,17 @@ public class VentanaConsulta extends JDialog {
         }
 
         // Abrir formulario con datos precargados
-        FormularioRegistro dialog = new FormularioRegistro(padre);
+        final FormularioRegistro dialog = new FormularioRegistro(padre);
         dialog.setDatos(titulo, genero, String.valueOf(temporadas), String.valueOf(anio), plataforma);
         dialog.setTitle("Editar Serie");
 
         dialog.addActionListener(ev -> {
             if (!dialog.getTitulo().isEmpty()
                 && dialog.getTemporadas() > 0
-                && dialog.getAnioLanzamiento() >= 1800
+                && dialog.getAnioLanzamiento() >= 1950
                 && dialog.getAnioLanzamiento() <= java.time.Year.now().getValue()) {
 
-                Serie serieEditada = new Serie(
+                final Serie serieEditada = new Serie(
                     id,
                     dialog.getTitulo(),
                     dialog.getGenero(),
@@ -247,13 +248,13 @@ public class VentanaConsulta extends JDialog {
 
     // Método para eliminar la serie seleccionada
     private void eliminarSerieSeleccionada() {
-        int fila = getFilaSeleccionada();
+        final int fila = getFilaSeleccionada();
         if (fila == -1) {
             JOptionPane.showMessageDialog(this, "Por favor, selecciona una serie.", "Advertencia", JOptionPane.WARNING_MESSAGE);
             return;
         }
 
-        int confirmado = JOptionPane.showConfirmDialog(this, "¿Estás seguro de eliminar esta serie?", "Confirmar eliminación", JOptionPane.YES_NO_OPTION);
+        final int confirmado = JOptionPane.showConfirmDialog(this, "¿Estás seguro de eliminar esta serie?", "Confirmar eliminación", JOptionPane.YES_NO_OPTION);
         if (confirmado == JOptionPane.YES_OPTION) {
             int id = (int) modeloTabla.getValueAt(fila, 0);
             dao.eliminar(id);

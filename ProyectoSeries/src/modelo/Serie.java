@@ -1,12 +1,12 @@
 package modelo;
 
 public class Serie {
-    private int id;
-    private String titulo;
-    private String genero;
-    private int temporadas;
-    private int anioLanzamiento; 
-    private String plataforma;
+    private final int id;
+    private final String titulo;
+    private final String genero;
+    private final int temporadas;
+    private final int anioLanzamiento; 
+    private final String plataforma;
 
     public Serie(int id, String titulo, String genero, int temporadas, int anioLanzamiento, String plataforma) {
         this.id = id;
